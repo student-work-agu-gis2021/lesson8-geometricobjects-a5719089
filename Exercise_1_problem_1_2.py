@@ -40,7 +40,10 @@ return LineString(points)
 
 line1 = None
 # YOUR CODE HERE 3 to define two points and store the result in line1
+point1=Point(45.2,22.34)
+point2=Point(100.22,-3.20)
 
+line1=create_line_geom([point1,point2])
 
 # CODE FOR TESTING YOUR SOLUTION
 print(line1)
