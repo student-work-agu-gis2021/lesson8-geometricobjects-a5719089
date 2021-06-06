@@ -29,6 +29,12 @@ print(point1.geom_type)
 # 
 
 # YOUR CODE HERE 2 to define create_line_geom()
+def create_line_geom(points):
+  assert type(points)==list,"Input should be a list!"
+  assert len(points)>=2,"LineString object requires at least two Points!"
+  for i in range(len(points)):
+    assert type(points[i])==Point,"All list values should be Shapely Point objects!"
+return LineString(points)    
 
 # Demonstrate the usage of your function; For example, create a line object with two points: `Point(45.2, 22.34)` & `Point(100.22, -3.20)` and store the result in a variable called `line1`:
 
